@@ -12,18 +12,18 @@ jobs:
     - name: testing deploy
       uses: appleboy/ssh-action@master
       with:
-        host: delta.nitt.edu
+        host: shell.xshellz.com
         port: 22
         username: indreshp
         key: ${{ secrets.SSH_SECRET }}
         script: |
-          cd /home/indreshp/react-deploy-test
-          git checkout .
-          git fetch origin
-          git reset --hard origin/prod
-          yarn install
-          yarn build
+          cd /home/indreshp/hi
+          # git checkout .
+          # git fetch origin
+          # git reset --hard origin/prod
+          # yarn install
+          # yarn build
           # pm2 restart react-deploy-test
           cd ..
-          /usr/bin/rm -rf public_html/*
-          cp -r react-deploy-test/build/* public_html/
+          # /usr/bin/rm -rf public_html/*
+          # cp -r react-deploy-test/build/* public_html/
