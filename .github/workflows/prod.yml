@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Workspace
+    name: Deploy Workspace test
     runs-on: ubuntu-latest
     steps:
     - name: testing deploy
